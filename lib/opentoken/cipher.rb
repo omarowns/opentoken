@@ -56,7 +56,7 @@ module OpenToken
     end
 
     NULL = Cipher.new(:suite => 0, :iv_length => 0)
-    AES_256_CBC = Cipher.new(:suite => 1, :iv_length => 32, :key_length => 256, :algorithm => 'aes-256-cbc')
+    AES_256_CBC = Cipher.new(:suite => 1, :iv_length => 16, :key_length => 256, :algorithm => 'aes-256-cbc')
     AES_128_CBC = Cipher.new(:suite => 2, :iv_length => 16, :key_length => 128, :algorithm => 'aes-128-cbc')
     DES3_168_CBC = Cipher.new(:suite => 3, :iv_length => 8, :key_length => 168, :algorithm => 'des-cbc')
 
